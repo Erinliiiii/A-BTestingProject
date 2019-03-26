@@ -1,4 +1,5 @@
 # A/BTesting Project to Determine an Effective Approach to Reduce Early Udacity Course Cancellation
+
 ##Experiment Description
 At the time of this experiment, Udacity courses currently have two options on the home page: "start free trial", and "access course materials". If the student clicks "start free trial", they will be asked to enter their credit card information, and then they will be enrolled in a free trial for the paid version of the course. After 14 days, they will automatically be charged unless they cancel first. If the student clicks "access course materials", they will be able to view the videos and take the quizzes for free, but they will not receive coaching support or a verified certificate, and they will not submit their final project for feedback.
 
@@ -12,7 +13,7 @@ The primary aim of Udacity is to improve the overall student experience and impr
 
 **Alternative Hypothesis** : The alternative hypothesis is that this might reduce the number of frustrated students who left the free trial because they didn't have enough time, without significantly reducing the number of students to continue past the free trial and eventually complete the course.
 
-##Experimental Design
+##Experimental Design##
 The unit of diversion is a cookie, although if the student enrolls in the free trial, they are tracked by user-id from that point forward. The same user-id cannot enroll in the free trial twice. For users that do not enroll, their user-id is not tracked in the experiment, even if they were signed in when they visited the course overview page.
 
 ###Metric Choice
