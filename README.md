@@ -1,4 +1,4 @@
-# A/BTesting Project to Determine an Effective Approach to Reduce Early Udacity Course Cancellation
+# A/BTesting Project to Determine an Effective Approach to Reduce Early Course Cancellation
 
 ##Experiment Description
 
