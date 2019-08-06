@@ -1,6 +1,6 @@
 # A/BTesting Project to Determine an Effective Approach to Reduce Early Course Cancellation
 
-##Experiment Description
+## Experiment Description
 
 At the time of this experiment, Udacity courses currently have two options on the home page: "start free trial", and "access course materials". If the student clicks "start free trial", they will be asked to enter their credit card information, and then they will be enrolled in a free trial for the paid version of the course. After 14 days, they will automatically be charged unless they cancel first. If the student clicks "access course materials", they will be able to view the videos and take the quizzes for free, but they will not receive coaching support or a verified certificate, and they will not submit their final project for feedback.
 
@@ -14,15 +14,15 @@ The primary aim of Udacity is to improve the overall student experience and impr
 
 **Alternative Hypothesis** : The alternative hypothesis is that this might reduce the number of frustrated students who left the free trial because they didn't have enough time, without significantly reducing the number of students to continue past the free trial and eventually complete the course.
 
-##Experimental Design##
+## Experimental Design##
 The unit of diversion is a cookie, although if the student enrolls in the free trial, they are tracked by user-id from that point forward. The same user-id cannot enroll in the free trial twice. For users that do not enroll, their user-id is not tracked in the experiment, even if they were signed in when they visited the course overview page.
 
-###Metric Choice
-####**Invariant Metrics** : number of cookies, number of clicks, click-through-probability.
+### Metric Choice
+#### **Invariant Metrics** : number of cookies, number of clicks, click-through-probability.
 
-####**Evaluation Metrics** : gross conversion, retention, net conversion.
+#### **Evaluation Metrics** : gross conversion, retention, net conversion.
 
-####**Invariant Metrics**
+#### **Invariant Metrics**
 Invariant metrics are thoses which remain invariant throughout the experiment. One could expect a similar distribution of such metrics both on control and experiment side. In the given experiment, the invariant metrics are as follows -
 
 **Number of cookies**: That is, number of unique cookies to view the course overview page. This is the unit of diversion and even distribution amongst the control and experiment groups is expected.
@@ -31,7 +31,7 @@ Invariant metrics are thoses which remain invariant throughout the experiment. O
 
 **Click-through-probability**: That is, number of unique cookies to click the "Start free trial" button divided by number of unique cookies to view the course overview page. Till the time the user clicks the "start free trial" button the user experience is same for all the users. Hence, we expect equal distribution in both the groups.
 
-####**Evaluation Metrics**
+#### **Evaluation Metrics**
 Evaluation metrics are chosen since there is a possibility of different distribution between experiment and control groups as a function of experiment. Each evaluation metric is associated with a minimum difference (dmin) that must be observed for consideration in the decision to launch the experiment. The ultimate goal is to minimize student frustation and use the limited coaching resources most efficiently. With this in mind, the following conditions must be satisfied -
 
 -Increased retension, i.e, the ratio of users who remained enrolled past the 14-day boundary to the number of users to complete checkout should increase.
@@ -44,10 +44,10 @@ Evaluation metrics are chosen since there is a possibility of different distribu
 
 **Net conversion**: That is, number of user-ids to remain enrolled past the 14-day boundary (and thus make at least one payment) divided by the number of unique cookies to click the "Start free trial" button.
 
-####**Unused Metrics**
+#### **Unused Metrics**
 Number of user-ids: The number of users who enroll in the free trial. User-ids are tracked only after enrolling in the free trial and equal distribution between the control and experimental branches would not be expected. User-id count could be used to evaluate how many enrollments stayed beyond the 14 day free trial boundary, but since it isn't normalized, I have elected not to use it.
 
-##Measuring Standard Deviation
+## Measuring Standard Deviation
 Analytical Estimate of Standard Deviation of Evaluation Metrics
 
 ***Evaluation Metric	Standard Deviation***
